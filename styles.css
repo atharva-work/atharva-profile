@@ -217,15 +217,14 @@ body {
 
 /* Profile image */
 .profile-image {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
   margin: 0 auto;
-  z-index: 1; /* Ensure it's above the background */
-  position: relative;
-  max-width: 100%;
+  flex-shrink: 0;
+  aspect-ratio: 1 / 1;
 }
 
 .column.left {
@@ -234,7 +233,9 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 20px;
+  min-width: 180px;
 }
+
 
 .profile-pic {
   width: 140px;

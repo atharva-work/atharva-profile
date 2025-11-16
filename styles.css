@@ -58,17 +58,6 @@ body {
   background-attachment: fixed;
 }
 
-.profile-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  z-index: 1; /* Ensure it's above the background */
-  position: relative;
-}
-
 
 
 /*
@@ -227,6 +216,17 @@ body {
 }
 
 /* Profile image */
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  z-index: 1; /* Ensure it's above the background */
+  position: relative;
+}
+
 .profile-pic {
   width: 140px;
   height: 140px;

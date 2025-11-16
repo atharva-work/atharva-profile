@@ -36,6 +36,7 @@ body {
   z-index: 1;
 }
 
+
 /* Full-page background image */
 .background-overlay {
   position: fixed;
@@ -55,6 +56,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -878,3 +884,39 @@ footer a {
   margin: 1rem auto;
 }
 
+
+/* Responsive styles OR Global styles */
+@media (max-width: 768px) {
+  .section {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+@media (max-width: 768px) {
+ .background-overlay {
+   background-attachment: scroll; /* Prevents fixed background jitter on mobile */
+  }
+}
+
+
+  .social-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+  overflow-x: hidden;
+}

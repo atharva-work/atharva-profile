@@ -50,7 +50,7 @@ body {
 
   background-image: 
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('Backround-Image.jpg'); /* ✅ Update path if needed */
+    url('Background-Image.jpg'); /* ✅ Update path if needed */
 
   background-size: cover; /* ✅ Maintains aspect ratio */
   background-position: center;
@@ -58,9 +58,15 @@ body {
   background-attachment: fixed;
 }
 
-html, body {
-  width: 100%;
-  overflow-x: hidden;
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  z-index: 1; /* Ensure it's above the background */
+  position: relative;
 }
 
 
@@ -919,4 +925,15 @@ img {
 
 body {
   overflow-x: hidden;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .background-overlay {
+    background-attachment: scroll;
+  }
 }

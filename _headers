@@ -3,7 +3,6 @@
   Content-Type: application/xml
 
 /*
-  Content-Security-Policy: default-src 'self'; img-src 'self' https:;
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
